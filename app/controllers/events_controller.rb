@@ -51,6 +51,6 @@ class EventsController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def event_params
-    params.require(:event).permit(:name, :description, :date, :time, :location, :organizer)
+    params.require(:event).permit(:name, :description, :date, :time, :location_id, :organizer)
   end
 end

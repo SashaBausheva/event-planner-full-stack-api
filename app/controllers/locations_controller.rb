@@ -1,5 +1,5 @@
-class LocationsController < ApplicationController
-  before_action :set_location, only: [:show, :update, :destroy]
+class LocationsController < OpenReadController
+  before_action :set_location, only: %i[update destroy]
 
   # GET /locations
   def index
@@ -10,7 +10,7 @@ class LocationsController < ApplicationController
 
   # GET /locations/1
   def show
-    render json: @location
+    render json: Location.find(params[:id])
   end
 
   # POST /locations

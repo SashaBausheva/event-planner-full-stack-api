@@ -11,7 +11,7 @@ curl "http://localhost:4741/events" \
       "description": "'"${DESC}"'",
       "date": "'"${DATE}"'",
       "time": "'"${TIME}"'",
-      "location": "'"${LOCATION}"'",
+      "location_id": "'"${LOCATION}"'",
       "organizer": "'"${ORG}"'"
     }
   }'
